@@ -1,0 +1,27 @@
+*[pika-parent-sticky]{
+    position:relative;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.sticky-top {
+    top: 0;
+}
+
+.sticky-bottom {
+    bottom: 0;
+}
+
+.end{
+    position: absolute;
+}
+
+.end-top {
+    top: 0;
+}
+
+.end-bottom {
+    bottom: 0;
+}
