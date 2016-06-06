@@ -1,0 +1,36 @@
+<html ng-app="pika-sticky">
+<head>
+    <link rel="stylesheet" href="../src/components/pika-sticky/pika-sticky-style.css">
+    <link rel="stylesheet" href="playground.css">
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../src/lib/jquery-extensions.js"></script>
+    <script src="../src/lib/double-lodash.js"></script>
+    <script src="../src/lib/Loop.js"></script>
+    <script src="../src/lib/createMultiFunction.js"></script>
+
+    <script src="../src/components/pika-angular/pika-angular-module.js"></script>
+    <script src="../src/components/pika-angular/services/pika-angular-jquery-extension-runner-service.js"></script>
+    <script src="../src/components/pika-angular/directives/pika-classes/pika-classes-directive.js"></script>
+    <script src="../src/components/pika-angular/directives/pika-classes/pika-classes-ctrl.js"></script>
+    <script src="../src/lib/jquery-extension-angularizer.js"></script>
+    <script src="../src/components/pika-sticky/pika-sticky-module.js"></script>
+    <script src="../src/components/pika-sticky/pika-sticky-service.js"></script>
+    <script src="../src/components/pika-sticky/pika-sticky/pika-sticky-directive.js"></script>
+    <script src="../src/components/pika-sticky/pika-sticky/pika-sticky-ctrl.js"></script>
+    <script src="../src/components/pika-sticky/pika-parent-sticky/pika-parent-sticky-directive.js"></script>
+    <script src="../src/components/pika-sticky/pika-parent-sticky/pika-parent-sticky-ctrl.js"></script>
+
+    <title>Test: Sticky Pikachu</title>
+</head>
+<body>
+<div class="above-parent"></div>
+<div pika-parent-sticky>
+    <div class="above"></div>
+    <pika-sticky><div class="sticky-content">I'M STICKY</div></pika-sticky>
+    <div class="below"></div>
+</div>
+<div class="below-parent"></div>
+</body>
+</html>
